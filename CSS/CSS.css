@@ -1,3 +1,9 @@
+header{
+	float: left;
+	border: 2px solid black;
+}
+
+
 ul {
 	list-style: none;
 	padding: 0px;
@@ -20,7 +26,8 @@ ul li a {
 	background: #FFFFFF;
 	padding: 5px 10px 5px 10px;
 	text-decoration: none;
-	white-space: nowrap;color: #000;
+	white-space: nowrap;
+	color: #000;
 }
 
 ul li a:hover {
