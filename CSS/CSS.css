@@ -1,8 +1,18 @@
 header{
 	float: left;
-	border: 2px solid black;
+	width: 250px;
+	height: 60px;
+	line-height: 30px;
 }
 
+a h1 {
+	color: black;
+}
+
+#logo{
+	float: left;
+	height: 60px;
+}
 
 ul {
 	list-style: none;
@@ -14,7 +24,7 @@ ul li {
 	display: block;
 	position: relative;
 	float: left;
-	border:1px solid #000
+	border: 1px solid #000;
 }
 
 li ul {
