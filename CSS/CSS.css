@@ -1,13 +1,14 @@
 header{
 	float: left;
-	width: 230px;
+	width: 250px;
 	height: 60px;
 	line-height: 30px;
 	border: 1px solid black;
 }
 
-a h1 {
+header h1 {
 	color: black;
+	font-family: sans-serif;
 }
 
 #logo{
@@ -19,6 +20,7 @@ ul { /*listan som de olika länkarna i navigationen ligger i */
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
+	font-family: sans-serif;
 }
 
 ul li { 
@@ -54,14 +56,10 @@ li:hover li {
 float: none;
 }
 
-li:hover a {
+li:hover a { /* ändrar bakgrunden på den länken man har muspekaren över. */
 	background: #FFFFFF;
 }
 
-li:hover li a:hover {
+li:hover li a:hover { /* ändrar bakgrunden på den länken man har muspekaren över i dropdown-menyn. */
 	background: #8A8A8A;
-}
-	
-#drop-nav li ul li {
-	border-top: 0px;
 }
