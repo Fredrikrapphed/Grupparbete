@@ -3,12 +3,20 @@ header{
 	width: 250px;
 	height: 60px;
 	line-height: 30px;
-	border: 1px solid black;
+	background: #E30505;
+	border: 3px solid #E30505;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+#rightmostli{ /* sätter border-radius längst till höger i nav-menyn */
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 header h1 {
 	color: black;
-	font-family: sans-serif;
+	font-family: "levenim mt", sans-serif;
 }
 
 #logo{
@@ -27,7 +35,6 @@ ul li {
 	display: block;
 	position: relative;
 	float: left;
-	border: 1px solid #000;
 }
 
 li ul { /* gör att listan som länkarna i dropdown-menyn blir osynlig. */
@@ -36,18 +43,18 @@ li ul { /* gör att listan som länkarna i dropdown-menyn blir osynlig. */
 
 ul li a { 
 	display: block;
-	background: #FFFFFF;
+	background: #E30505;
 	padding: 20px 50px 20px 50px;
 	text-decoration: none;
 	white-space: nowrap;
-	color: #000;
+	color: black;
 }
 
-ul li a:hover { /* lägger en annan bakgrund när man har musen över länkarna. */
-	background: #8A8A8A;
+ul li a:hover { /* lägger en annan bakgrund när man har musen över länkarna ovanför dropdow. */
+	background: #1F1F1F;
 }
   
-li:hover ul { /* gör så att dropdown-menyn syns när man har musen över den synliga länken. */
+li:hover ul { /* gör så att dropdown-menyn syns när man har musen över länken ovanför. */
 	display: block;
 	position: absolute;
 }
@@ -57,9 +64,14 @@ float: none;
 }
 
 li:hover a { /* ändrar bakgrunden på den länken man har muspekaren över. */
-	background: #FFFFFF;
+	background: #E30505;
 }
 
 li:hover li a:hover { /* ändrar bakgrunden på den länken man har muspekaren över i dropdown-menyn. */
-	background: #8A8A8A;
+	background: #1F1F1F;
 }
+
+.topmenu{
+	border: 3px solid #E30505;
+}
+
