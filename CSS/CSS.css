@@ -23,3 +23,9 @@ header h1 {
 	float: left;
 	height: 60px;
 }
+
+section{
+	border: 2px solid white;
+	margin-top: 60px;
+
+}
