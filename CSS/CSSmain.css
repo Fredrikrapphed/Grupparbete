@@ -1,0 +1,31 @@
+body{
+	background: url("http://wallvan.com/wp-content/uploads/2014/12/Abstract-Patterns-Wallpaper-Grey-Background.png");
+	background-color: 4D4D4D;
+}
+
+header{
+	float: left;
+	width: 250px;
+	height: 60px;
+	line-height: 30px;
+	background: #E30505;
+	border: 3px solid #E30505;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+header h1 {
+	color: black;
+	font-family: "levenim mt", sans-serif;
+}
+
+#logo{
+	float: left;
+	height: 60px;
+}
+
+section{
+	border: 2px solid white;
+	margin-top: 60px;
+
+}
