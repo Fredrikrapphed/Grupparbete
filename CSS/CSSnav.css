@@ -46,7 +46,7 @@ li:hover li a:hover { /* ändrar bakgrunden på den länken man har muspekaren över
 }
 
 .topmenu{
-	border: 3px solid #E30505;
+	border: 4px solid #E30505;
 }
 
 #rightmostli{ /* sätter border-radius längst till höger i nav-menyn */
