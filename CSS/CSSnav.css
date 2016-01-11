@@ -45,11 +45,15 @@ li:hover li a:hover { /* ändrar bakgrunden på den länken man har muspekaren över
 	background: #1F1F1F;
 }
 
-.topmenu{
-	border: 3px solid #E30505;
-}
-
 #rightmostli{ /* sätter border-radius längst till höger i nav-menyn */
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
+}
+
+#drop-nav{
+	height: 66px;
 }
