@@ -3,6 +3,7 @@ ul { /*listan som de olika länkarna i navigationen ligger i */
 	padding: 0px;
 	margin: 0px;
 	font-family: sans-serif;
+	
 }
 
 ul li { 
@@ -11,13 +12,13 @@ ul li {
 	float: left;
 }
 
-li ul { /* gör att listan som länkarna i dropdown-menyn blir osynlig. */
+li ul { /* gör att listan med länkarna i dropdown-menyn blir osynlig. */
 	display: none;
 }
 
 ul li a { 
 	display: block;
-	background: #E30505;
+	background: #6E6E6E;
 	padding: 20px 50px 20px 50px;
 	text-decoration: none;
 	white-space: nowrap;
@@ -25,7 +26,7 @@ ul li a {
 }
 
 ul li a:hover { /* lägger en annan bakgrund när man har musen över länkarna ovanför dropdown-menyn. */
-	background: #1F1F1F;
+	background: #808080;
 }
   
 li:hover ul { /* gör så att dropdown-menyn syns när man har musen över länken ovanför. */
@@ -37,21 +38,12 @@ li:hover li {
 float: none;
 }
 
-li:hover a { /* ändrar bakgrunden på den länken man har muspekaren över. */
-	background: #E30505;
+li:hover a { /* ändrar bakgrunden på dropdown-menyn. */
+	background: #6E6E6E;
 }
 
 li:hover li a:hover { /* ändrar bakgrunden på den länken man har muspekaren över i dropdown-menyn. */
-	background: #1F1F1F;
-}
-
-#rightmostli{ /* sätter border-radius längst till höger i nav-menyn */
-	-webkit-border-bottom-right-radius: 10px;
-	-webkit-border-top-right-radius: 10px;
-	-moz-border-bottom-right-radius: 10px;
-	-moz-border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top-right-radius: 10px;
+	background: #808080;
 }
 
 #drop-nav{
