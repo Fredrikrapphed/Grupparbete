@@ -2,10 +2,10 @@
 	padding: 85px 0px 0px 205px;
 }
 
-.visaProdukter{
+.showProducts{
 	display:none;
 }
-.visaProdukter:target{
+.showProducts:target{
 	display:block;
 }
 
