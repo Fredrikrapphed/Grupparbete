@@ -11,7 +11,7 @@
 
 .itemContainer{
 	float:left;
-	background-color:rgb(160,160,160);
+	background-color:#6E6E6E;
 	height:300px;
 	width:200px;
 	border:solid black 5px;
@@ -20,7 +20,7 @@
 }
 
 .itemContainer:hover{
-		background-color:rgb(145,145,145);
+		background-color:#808080;
 }
 
 .itemPicture{
