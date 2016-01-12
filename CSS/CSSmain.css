@@ -12,6 +12,7 @@ header{
 	border: 3px solid #E30505;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
+	z-index: 0;
 }
 
 header h1 {
