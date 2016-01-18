@@ -13,8 +13,9 @@
 	float:left;
 	background-color:#6E6E6E;
 	height:200px;
-	width:300px;
+	width:350px;
 	margin:10px 0px 0px 10px;
+	white-space: nowrap; /* elementen med display: inline-block i detta wrappar inte .*/
 }
 
 .itemContainer:hover{
@@ -22,10 +23,10 @@
 }
 
 .itemPicture{
+	display: inline-block;
 	height:150px;
 	width:176px;
 	margin:10px 0px 0px 10px;
-	border-bottom:0px;
 }
 
 .itemPicture img{
@@ -34,9 +35,9 @@
 }
 
 .itemName{
-	background-color:white;
-	height:15px;
-	width:166px;
+	display: inline-block;
+	height:25px;
+	width:135px;
 	margin-left:10px;
 	padding:5px 5px 0px 5px;
 }
@@ -48,20 +49,19 @@
 }
 
 .itemInfoBox{
-	background-color:white;
 	height:53px;
-	width:166px;
+	width:100px;
 	margin:0px 0px 0px 0px;
 	padding:7px 5px 0px 5px;
+	white-space: normal;
 }
 .itemInfoBox p{
+	font-weight: normal;
 	margin:0px;
-	word-break:break-all;
+	font-size:small;
 }
 
-
 .itemPrice{
-	background-color:white;
 	float:left;
 	height:46px;
 	width:112px;
@@ -76,7 +76,6 @@
 }
 
 .itemButtonContainer{
-	background-color:white;
 	width:166px;
 	height:46px;
 	margin:0px 0px 0px 10px;
