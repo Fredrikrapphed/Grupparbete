@@ -14,9 +14,7 @@
 	background-color:#6E6E6E;
 	height:200px;
 	width:300px;
-	border:solid black 5px;
 	margin:10px 0px 0px 10px;
-	border-radius:25px;
 }
 
 .itemContainer:hover{
@@ -27,14 +25,12 @@
 	height:150px;
 	width:176px;
 	margin:10px 0px 0px 10px;
-	border:solid black 2px;
 	border-bottom:0px;
-	border-radius:20px 20px 0px 0px;
 }
+
 .itemPicture img{
 	height:150px;
 	width:176px;
-	border-radius:20px 20px 0px 0px;
 }
 
 .itemName{
@@ -43,8 +39,6 @@
 	width:166px;
 	margin-left:10px;
 	padding:5px 5px 0px 5px;
-	border-left:solid black 2px;
-	border-right:solid black 2px;
 }
 .itemName p{
 	margin:0px 0px 0px 0px;
@@ -87,9 +81,8 @@
 	height:46px;
 	margin:0px 0px 0px 10px;
 	padding:0px 5px 0px 5px;
-	border:solid black 2px;
 	border-top:0px;
-	border-radius:0px 0px 20px 20px;
+	
 }
 
 .itemBuyButton{
@@ -98,16 +91,17 @@
 	height:30px;
 	width:50px;
 	color:white;
-	border:solid black 2px;
 	background-color:rgb(100,200,100);
-	border-radius:20px;
 }
+
 .itemBuyButton:hover{
 	background-color:rgb(80,180,80);
 }
+
 .itemBuyButton :active {
 	color:red;
-} 
+}
+ 
 .itemBuyButton p{
 	margin:0px 0px 0px 0px; /* To center text vertically */
 	text-align:center;
