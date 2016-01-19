@@ -33,14 +33,9 @@ label {
 }
 .loginform {
 	width: 410px;
-<<<<<<< HEAD
-	margin: 0;
-	padding: 30px;
-=======
 	margin-top: 200px;
 	margin-left: 25%;
 	padding: 10px;
->>>>>>> 8f08ca666e95b0ab946cd7c818daa30141c9c221
 	background-color: rgba(250,250,250,0.9);
 	border-radius: 5px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
