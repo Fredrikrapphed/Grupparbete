@@ -8,15 +8,12 @@ header{
 	width: 250px;
 	height: 60px;
 	line-height: 30px;
-<<<<<<< HEAD
 	background: #6E6E6E;
-=======
 	background: #E30505;
 	border: 3px solid #E30505;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
 	z-index: 0;
->>>>>>> 8f08ca666e95b0ab946cd7c818daa30141c9c221
 }
 
 header h1 {
