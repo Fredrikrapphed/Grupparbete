@@ -2,7 +2,7 @@ ul { /*listan som de olika länkarna i navigationen ligger i */
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
-	font-family: sans-serif;
+	font-family: Arial,sans-serif;
 	
 }
 
