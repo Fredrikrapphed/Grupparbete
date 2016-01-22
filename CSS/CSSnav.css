@@ -2,7 +2,8 @@ ul { /*listan som de olika länkarna i navigationen ligger i */
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
-	font-family: Arial,sans-serif;
+	font-family: 'PT sans', Arial,sans-serif;
+	font-size: 91%;
 	
 }
 
