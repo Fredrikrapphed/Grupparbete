@@ -27,7 +27,9 @@ nav{
 }
 
 form {
-	
+	position: relative;
+	float: right; 
+	bottom: 60px;
 }
 
 .search {
