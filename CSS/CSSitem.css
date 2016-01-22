@@ -36,12 +36,12 @@
 
 .itemName{
 	display: inline-block;
-	margin-left:10px;
+	margin-left: 10px;
 	padding: 0px 0px 0px 10px;
 }
 .itemName p{
 	margin:0px 0px 0px 0px;
-	text-align:center;
+	text-align: center;
 	font-weight:bold;
 	font-size:25px;
 	font-family: 'PT sans', Arial,sans-serif;
@@ -85,11 +85,9 @@
 }
 
 .itemBuyButton{
-	margin:0px 0px 5px 0px;
 	float:right;
 	height:30px;
 	width:50px;
-	color:white;
 	background-color:rgb(100,200,100);
 }
 
@@ -102,7 +100,9 @@
 }
  
 .itemBuyButton p{
-	margin:0px 0px 0px 0px; /* To center text vertically */
+	color:white;
+	margin:0px 0px 0px 0px;
 	text-align:center;
-	font-size:25px;
+	font-size: 20px;
+	font-family: 'PT sans', Arial, sans-serif;
 }
