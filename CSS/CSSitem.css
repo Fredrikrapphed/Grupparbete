@@ -77,26 +77,25 @@
 
 .itemButtonContainer{
 	width:166px;
-	height:10px;
+	height:35px;
 	margin:0px 0px 0px 10px;
 	padding:0px 5px 0px 5px;
 	border-top:0px;
-	
 }
 
 .itemBuyButton{
 	float:right;
 	height:30px;
 	width:50px;
-	background-color: #00DD00;
+	background-color: #1ECA1E;
 }
 
 .itemBuyButton:hover{
-	background-color: #00ED00;
+	background-color: #46D246;
 }
 
-.itemBuyButton :active {
-	color: #dd0000;
+.itemBuyButton:active {
+	background-color: #00B100;
 }
  
 .itemBuyButton p{
