@@ -8,11 +8,13 @@
 		<link rel="stylesheet" href="CSS/cssmain.css">
 		<link rel="stylesheet" href="CSS/cssnav.css">
 		<link rel="stylesheet" href="CSS/cssitem.css">
+		<link rel="stylesheet" href="CSS/cssslideshow.css">
 		
 		<!-- Typsnittet som används länkas från Google fonts. -->
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'> 
 		
-		<script> <!-- Skapar element för taggarna som används så att de kan läsas av IE 8 och äldre webbläsare. -->
+		<!-- Skapar element för taggarna som används så att de kan läsas av IE 8 och äldre webbläsare. -->
+		<script> 
 			document.createElement('header');
 			document.createElement('section');
 			document.createElement('main');
@@ -21,9 +23,35 @@
 			document.createElement('nav');
 			document.createElement('footer');
 		</script>
+		
+		<!-- javascript för bildspelet -->
+		<script type="text/javascript">
+		var imagecount = 1;
+		var total = 4;
+		
+		function slide(x) {
+			var image = document.getElementById('slideshowimg');
+			imagecount = imagecount + x;
+			
+			if(imagecount > total){imagecount = 1;}
+			if(imagecount < 1){imagecount = total;}
+			
+			image.src = "images/img"+ imagecount +".png"
+		}
+		
+		window.setInterval(function slideA() {
+			var image = document.getElementById('slideshowimg');
+			imagecount = imagecount + 1;
+			
+			if(imagecount > total){imagecount = 1;}
+			if(imagecount < 1){imagecount = total;}
+			
+			image.src = "images/img"+ imagecount +".png"
+		}, 5000);
+		</script>
 	</head>
 
-	<body>
+	<body onLoad="slideA()">
 		<header>
 			<a href=index.html>
 				<img id="logo" src="images/Sream_logo.png" alt="Sream logo" />
@@ -58,15 +86,17 @@
 			</ul>
 		</nav>
 		
-		<form> <!-- sökmenyn-->
+		<!-- sökmenyn-->
+		<form> 
 			<input type="text" class="search" placeholder="Sök...">
 			<input type="button" class="button" value="Sök">
 		</form>
 		
+		<!-- bildspelet -->
 		<div id="container">
-			<img src="images/img1.png" alt="Gamelogo">
-			<div id ="leftButton"><img class="left" src="images/leftarrow.png" alt="leftarrow"></div>
-			<div id ="rightButton"><img class="right" src="images/rightarrow.png" alt="rightarrow"></div>
+			<img src="images/img1.png" id="slideshowimg" alt="Gamelogo">
+			<div id ="leftButton"><img onClick="slide(-1)" class="left" src="images/leftarrow.png" alt="leftarrow"></div>
+			<div id ="rightButton"><img onClick="slide(1)" class="right" src="images/rightarrow.png" alt="rightarrow"></div>
 		</div>
 		
 		<main>
