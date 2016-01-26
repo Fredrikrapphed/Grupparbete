@@ -22,7 +22,7 @@ h1{
 	position:relative;
 	width: 70%;
 	margin: 0px auto 0px auto; /* top right bottom left */
-	border: 3px white solid; /* border-width border-color border-style*/
+	border: 0px white solid; /* border-width border-color border-style*/
 	color: white;
 	top: 100px;
 }

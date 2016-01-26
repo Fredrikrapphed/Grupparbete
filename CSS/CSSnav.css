@@ -1,4 +1,4 @@
-ul { /*listan som de olika länkarna i navigationen ligger i */
+nav ul { /*listan som de olika länkarna i navigationen ligger i */
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
@@ -7,7 +7,7 @@ ul { /*listan som de olika länkarna i navigationen ligger i */
 	
 }
 
-ul li { 
+nav ul li { 
 	display: block;
 	position: relative;
 	float: left;
@@ -15,11 +15,11 @@ ul li {
 	background: #6E6E6E;
 }
 
-li ul { /* gör att listan med länkarna i dropdown-menyn blir osynlig. */
+nav li ul { /* gör att listan med länkarna i dropdown-menyn blir osynlig. */
 	display: none;
 }
 
-ul li a { 
+nav ul li a { 
 	display: block;
 	padding: 20px 50px 20px 50px;
 	text-decoration: none;
@@ -27,24 +27,24 @@ ul li a {
 	color: black;
 }
 
-ul li a:hover { /* lägger en annan bakgrund när man har musen över länkarna ovanför dropdown-menyn. */
+nav ul li a:hover { /* lägger en annan bakgrund när man har musen över länkarna ovanför dropdown-menyn. */
 	background: #808080;
 }
   
-li:hover ul { /* gör så att dropdown-menyn syns när man har musen över länken ovanför. */
+nav li:hover ul { /* gör så att dropdown-menyn syns när man har musen över länken ovanför. */
 	display: block;
 	position: absolute;
 }
 
-li:hover li {
+nav li:hover li {
 float: none;
 }
 
-li:hover a { /* ändrar bakgrunden på dropdown-menyn. */
+nav li:hover a { /* ändrar bakgrunden på dropdown-menyn. */
 	background: #6E6E6E;
 }
 
-li:hover li a:hover { /* ändrar bakgrunden på den länken man har muspekaren över i dropdown-menyn. */
+nav li:hover li a:hover { /* ändrar bakgrunden på den länken man har muspekaren över i dropdown-menyn. */
 	background: #808080;
 }
 
