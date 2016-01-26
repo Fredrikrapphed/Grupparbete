@@ -2,7 +2,8 @@ ul { /*listan som de olika länkarna i navigationen ligger i */
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
-	font-family: sans-serif;
+	font-family: 'PT sans', Arial,sans-serif;
+	font-size: 91%;
 	
 }
 
@@ -10,6 +11,8 @@ ul li {
 	display: block;
 	position: relative;
 	float: left;
+	height: 60px;
+	background: #6E6E6E;
 }
 
 li ul { /* gör att listan med länkarna i dropdown-menyn blir osynlig. */
@@ -18,7 +21,6 @@ li ul { /* gör att listan med länkarna i dropdown-menyn blir osynlig. */
 
 ul li a { 
 	display: block;
-	background: #6E6E6E;
 	padding: 20px 50px 20px 50px;
 	text-decoration: none;
 	white-space: nowrap;

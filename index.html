@@ -8,7 +8,13 @@
 		<link rel="stylesheet" href="CSS/cssmain.css">
 		<link rel="stylesheet" href="CSS/cssnav.css">
 		<link rel="stylesheet" href="CSS/cssitem.css">
-		<script> <!-- Skapar element för taggarna som används så att de kan läsas av IE 8 och äldre webbläsare. -->
+		<link rel="stylesheet" href="CSS/cssslideshow.css">
+		
+		<!-- Typsnittet som används länkas från Google fonts. -->
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'> 
+		
+		<!-- Skapar element för taggarna som används så att de kan läsas av IE 8 och äldre webbläsare. -->
+		<script> 
 			document.createElement('header');
 			document.createElement('section');
 			document.createElement('main');
@@ -17,9 +23,35 @@
 			document.createElement('nav');
 			document.createElement('footer');
 		</script>
+		
+		<!-- javascript för bildspelet -->
+		<script type="text/javascript">
+		var imagecount = 1;
+		var total = 4;
+		
+		function slide(x) {
+			var image = document.getElementById('slideshowimg');
+			imagecount = imagecount + x;
+			
+			if(imagecount > total){imagecount = 1;}
+			if(imagecount < 1){imagecount = total;}
+			
+			image.src = "images/img"+ imagecount +".png"
+		}
+		
+		window.setInterval(function slideA() {
+			var image = document.getElementById('slideshowimg');
+			imagecount = imagecount + 1;
+			
+			if(imagecount > total){imagecount = 1;}
+			if(imagecount < 1){imagecount = total;}
+			
+			image.src = "images/img"+ imagecount +".png"
+		}, 5000);
+		</script>
 	</head>
 
-	<body>
+	<body onLoad="slideA()">
 		<header>
 			<a href=index.html>
 				<img id="logo" src="images/Sream_logo.png" alt="Sream logo" />
@@ -54,10 +86,19 @@
 			</ul>
 		</nav>
 		
-		<form> <!-- sökmenyn-->
-			<input type="text" class="search" placeholder="Sök..." required>
+		<!-- sökmenyn-->
+		<form> 
+			<input type="text" class="search" placeholder="Sök...">
 			<input type="button" class="button" value="Sök">
 		</form>
+		
+		<!-- bildspelet -->
+		<div id="container">
+			<img src="images/img1.png" id="slideshowimg" alt="Gamelogo">
+			<div id ="leftButton"><img onClick="slide(-1)" class="left" src="images/leftarrow.png" alt="leftarrow"></div>
+			<div id ="rightButton"><img onClick="slide(1)" class="right" src="images/rightarrow.png" alt="rightarrow"></div>
+		</div>
+		
 		<main>
 			<div class="showProducts" id="action">
 				<div class="itemContainer">
@@ -66,7 +107,29 @@
 					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
 					</div>
 					<div class="itemButtonContainer">
-						<div class="itemPrice"><p> 20 kr </p></div>
+						<div class="itemPrice"><p> 500 kr </p></div>
+						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+					</div>
+				</div>
+				
+				<div class="itemContainer">
+					<div class="itemPicture"><img src="images/action.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Actionspel </p>
+					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+					</div>
+					<div class="itemButtonContainer">
+						<div class="itemPrice"><p> 500 kr </p></div>
+						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+					</div>
+				</div>
+				
+				<div class="itemContainer">
+					<div class="itemPicture"><img src="images/action.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Actionspel </p>
+					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+					</div>
+					<div class="itemButtonContainer">
+						<div class="itemPrice"><p> 500 kr </p></div>
 						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
 					</div>
 				</div>
@@ -79,38 +142,107 @@
 					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
 					</div>
 					<div class="itemButtonContainer">
-						<div class="itemPrice"><p> 20 kr </p></div>
+						<div class="itemPrice"><p> 250 kr </p></div>
 						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
 					</div>
 				</div>
-			</div>
-			
-			<div class="showProducts" id="strategy">
+				
 				<div class="itemContainer">
-					<div class="itemPicture"><img src="images/strategy.png" alt="Produkt"/></div>
-					<div class="itemName"><p> Strategispel </p>
+					<div class="itemPicture"><img src="images/adventure.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Äventyrsspel </p>
 					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
 					</div>
 					<div class="itemButtonContainer">
-						<div class="itemPrice"><p> 20 kr </p></div>
+						<div class="itemPrice"><p> 250 kr </p></div>
+						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+					</div>
+				</div>
+				
+				<div class="itemContainer">
+					<div class="itemPicture"><img src="images/adventure.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Äventyrsspel </p>
+					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+					</div>
+					<div class="itemButtonContainer">
+						<div class="itemPrice"><p> 250 kr </p></div>
 						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
 					</div>
 				</div>
 			</div>
 			
 			<div class="showProducts" id="rpg">
+			
 				<div class="itemContainer">
 					<div class="itemPicture"><img src="images/rpg.png" alt="Produkt"/></div>
 					<div class="itemName"><p> Rollspel </p>
 					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
 					</div>
 					<div class="itemButtonContainer">
-						<div class="itemPrice"><p> 20 kr </p></div>
+						<div class="itemPrice"><p> 100 kr </p></div>
+						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+					</div>
+				</div>
+				
+				<div class="itemContainer">
+					<div class="itemPicture"><img src="images/rpg.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Rollspel </p>
+					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+					</div>
+					<div class="itemButtonContainer">
+						<div class="itemPrice"><p> 100 kr </p></div>
+						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+					</div>
+				</div>
+				
+				<div class="itemContainer">
+					<div class="itemPicture"><img src="images/rpg.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Rollspel </p>
+					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+					</div>
+					<div class="itemButtonContainer">
+						<div class="itemPrice"><p> 100 kr </p></div>
+						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="showProducts" id="strategy">
+			
+				<div class="itemContainer">
+					<div class="itemPicture"><img src="images/strategy.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Strategispel </p>
+					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+					</div>
+					<div class="itemButtonContainer">
+						<div class="itemPrice"><p> 150 kr </p></div>
+						<a href="#big"><div class="	itemBuyButton"><p> Köp </p></div></a>
+					</div>
+				</div>
+				
+				<div class="itemContainer">
+					<div class="itemPicture"><img src="images/strategy.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Strategispel </p>
+					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+					</div>
+					<div class="itemButtonContainer">
+						<div class="itemPrice"><p> 150 kr </p></div>
+						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+					</div>
+				</div>
+				
+				<div class="itemContainer">
+					<div class="itemPicture"><img src="images/strategy.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Strategispel </p>
+					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+					</div>
+					<div class="itemButtonContainer">
+						<div class="itemPrice"><p> 150 kr </p></div>
 						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
 					</div>
 				</div>
 			</div>
+		
 		</main>
 	</body>
-
 </html>

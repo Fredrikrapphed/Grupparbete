@@ -36,73 +36,72 @@
 
 .itemName{
 	display: inline-block;
-	height:25px;
-	width:120px;
-	margin-left:10px;
-	padding:5px 5px 0px 5px;
+	padding: 0px 0px 0px 10px;
+	width: 141px;
 }
 .itemName p{
 	margin:0px 0px 0px 0px;
-	text-align:center;
-	font-weight:bold;
-	font-size:25px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: 'PT sans', Arial,sans-serif;
 }
 
 .itemInfoBox{
-	height:53px;
-	width:100px;
-	margin:0px 0px 0px 0px;
-	padding:7px 5px 0px 5px;
+	height: 53px;
+	width: 100px;
+	margin: 0px 0px 0px 15px;
+	padding: 7px 0px 0px 0px;
 	white-space: normal;
 }
 .itemInfoBox p{
 	font-weight: normal;
 	margin:0px;
 	font-size:small;
+	font-family: 'PT sans', Arial,sans-serif;
 }
 
 .itemPrice{
 	float:left;
-	height:46px;
+	height:28px;
 	width:112px;
-	border-radius:0px 0px 0px 20px;
 }
 .itemPrice p{
-	color:red;
-	margin:12px 0px 0px 0px; /* To center text vertically */
+	color:#dd0000;
+	margin:0px 0px 0px 0px;
 	text-align:center;
 	font-size:25px;
 	font-weight:bold;
+	font-family: 'PT sans', Arial,sans-serif;
 }
 
 .itemButtonContainer{
 	width:166px;
-	height:46px;
+	height:35px;
 	margin:0px 0px 0px 10px;
 	padding:0px 5px 0px 5px;
 	border-top:0px;
-	
 }
 
 .itemBuyButton{
-	margin:7px 0px 5px 0px;
 	float:right;
 	height:30px;
 	width:50px;
-	color:white;
-	background-color:rgb(100,200,100);
+	background-color: #1ECA1E;
 }
 
 .itemBuyButton:hover{
-	background-color:rgb(80,180,80);
+	background-color: #46D246;
 }
 
-.itemBuyButton :active {
-	color:red;
+.itemBuyButton:active {
+	background-color: #00B100;
 }
  
 .itemBuyButton p{
-	margin:0px 0px 0px 0px; /* To center text vertically */
+	color:white;
+	margin:0px 0px 0px 0px;
 	text-align:center;
-	font-size:25px;
+	font-size: 20px;
+	font-family: 'PT sans', Arial, sans-serif;
 }
