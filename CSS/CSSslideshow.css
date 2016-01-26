@@ -28,6 +28,7 @@
 }
 
 .left{
+	opacity: 0;
 	height:50px;
 	width:50px;
 	position:absolute;
@@ -36,9 +37,26 @@
 }
 
 .right{
+	opacity: 0;
 	height:50px;
 	width:50px;
 	position:absolute;
 	top:40%;
 	right:0px;
+}
+
+#container:hover .left{
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	
+}
+
+#container:hover .right{
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	
 }
