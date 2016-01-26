@@ -1,0 +1,28 @@
+body {
+    
+}
+
+h2,h3,h4,h5,h6{
+	font-family: Georgia;
+	font-style: none; /* Cursive */
+	text-shadow: 5px 5px 6px rgba(0,0,0,10); /* horizontal-shadow vertical-shadow blur color(red, green, blue, opacity) */
+	text-align: left;
+}
+
+h1{
+	font-family: Georgia;
+	font-style: none; /* Cursive */
+	text-shadow: 2px 2px 3px rgba(0,0,0,1); /* horizontal-shadow vertical-shadow blur color(red, green, blue, opacity) */
+	text-align: center;
+	color: red;
+
+}
+
+.container{
+	position:relative;
+	width: 70%;
+	margin: 0px auto 0px auto; /* top right bottom left */
+	border: 3px white solid; /* border-width border-color border-style*/
+	color: white;
+	top: 100px;
+}
