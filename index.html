@@ -49,11 +49,22 @@
 			image.src = "images/img"+ imagecount +".png"
 		}, 5000);
 		</script>
+		
+		<script>
+		 function hideSlide(){
+	            var slideDiv = document.getElementById('container');
+	            slideDiv.style.display = 'none';
+	        }
+	        function showSlide(){
+	            var slideDiv = document.getElementById('container');
+	            slideDiv.style.display = 'block';
+	        }
+		</script>
 	</head>
 
 	<body onLoad="slideA()"> 
 		<header>
-			<a href=index.html>
+			<a href="index.html" onmousedown="showSlide()">
 				<img id="logo" src="images/Sream_logo.png" alt="Sream logo" />
 			</a>
 				<h1>SREAM</h1>
@@ -62,19 +73,19 @@
 		<nav>
 			
 			<ul id="drop-nav"> <!-- nav-menyn som en ul-lista -->
-				<li><a href="#">Spel &#9660;</a>
+				<li><a href="#" onmousedown="showSlide()">Spel &#9660;</a>
 									<ul>
-						<li><a href="#action">Action</a></li>
-						<li><a href="#adventure">Äventyr</a></li>
-						<li><a href="#rpg">Rollspel</a></li>
-						<li><a href="#strategy">Strategi</a></li>
+						<li><a href="#action" onmousedown="hideSlide()">Action</a></li>
+						<li><a href="#adventure" onmousedown="hideSlide()">Äventyr</a></li>
+						<li><a href="#rpg" onmousedown="hideSlide()">Rollspel</a></li>
+						<li><a href="#strategy" onmousedown="hideSlide()">Strategi</a></li>
 					</ul>
 				</li>
 					
 				<li><a href="#">System &#9660;</a>
 					<ul>
-						<li><a href="#osx">OSX</a></li>
-						<li><a href="#linux">Linux</a></li>
+						<li><a href="#osx" onmousedown="hideSlide()">OSX</a></li>
+						<li><a href="#linux" onmousedown="hideSlide()">Linux</a></li>
 					</ul>
 				</li>
 					
