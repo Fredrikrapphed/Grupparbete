@@ -20,15 +20,27 @@ header h1 {
 	height: 60px;
 }
 
-
 nav{
 	height: 67px;
+}
+
+.shopCart{
+	height:50px;
+	width:90px;
+	background:#6E6E6E;
+	float:right;
+}
+
+#shoppingcart{
+	height:50px;
+	width:50px;
 }
 
 #searchBar {
 	position: relative;
 	float: right; 
 	bottom: 60px;
+	left: 90px;
 }
 
 .search {
@@ -38,7 +50,6 @@ nav{
 }
 
 .button {
-
 	padding:8px 15px;
 	left:-8px;
 	border: none;
