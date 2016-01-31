@@ -22,10 +22,22 @@
 			document.createElement('nav');
 			document.createElement('footer');
 		</script>
+		<!-- script för kundvagnens antal -->
+		<script>
+		var amount = 0;
+		
+		function cartItems(x){
+			amount = amount + x;
+			var text = document.getElementById("cartItems");
+		
+				text.innerHTML = "("+amount+")";
+			
+		}
+		</script>
 		
 	</head>
 
-	<body onLoad="slideA()"> 
+	<body> 
 		<header>
 			<a href="frontpage.html"">
 				<img id="logo" src="images/Sream_logo.png" alt="Sream logo" />
@@ -61,7 +73,8 @@
 		</nav>
 		
 		<div class="shopCart">
-			<img id="shoppingcart" src="images/shopcart.png" alt="shopping cart" />
+			<img id="shoppingcart" src="images/shopcart.png" alt="shopping cart">
+			<p id="cartItems">(0)</p>
 		</div>
 		
 		<!-- sökmenyn-->
@@ -79,7 +92,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 500 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 				
@@ -90,7 +103,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 500 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 				
@@ -101,7 +114,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 500 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 			</div>	
@@ -114,7 +127,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 250 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 				
@@ -125,7 +138,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 250 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 				
@@ -136,7 +149,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 250 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 			</div>
@@ -150,7 +163,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 100 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 				
@@ -161,7 +174,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 100 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 				
@@ -172,7 +185,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 100 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 				
@@ -187,7 +200,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 150 kr </p></div>
-						<a href="#big"><div class="	itemBuyButton"><p> Köp </p></div></a>
+							<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 				
@@ -198,7 +211,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 150 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 				
@@ -209,7 +222,7 @@
 					</div>
 					<div class="itemButtonContainer">
 						<div class="itemPrice"><p> 150 kr </p></div>
-						<a href="#big"><div class="itemBuyButton"><p> Köp </p></div></a>
+						<input type="button" class="buyButton" value="Köp" onClick="cartItems(1)">
 					</div>
 				</div>
 			</div>
