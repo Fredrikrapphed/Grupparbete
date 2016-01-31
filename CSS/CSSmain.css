@@ -25,22 +25,28 @@ nav{
 }
 
 .shopCart{
+	position:absolute;
 	height:50px;
 	width:90px;
 	background:#6E6E6E;
-	float:right;
+	right: 8px;
 }
 
 #shoppingcart{
-	height:50px;
-	width:50px;
+	position: absolute;
+	height:45px;
+	width:45px;
+	padding:0px;
+	margin: 0px; 
+	border:1px solid black;
+	
 }
 
 #searchBar {
 	position: relative;
 	float: right; 
 	bottom: 60px;
-	left: 90px;
+	
 }
 
 .search {

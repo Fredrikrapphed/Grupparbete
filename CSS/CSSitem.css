@@ -1,7 +1,3 @@
-.produkter{
-	padding: 85px 0px 0px 205px;
-}
-
 .showProducts{
 	display:none;
 }
@@ -19,7 +15,7 @@
 }
 
 .itemContainer:hover{
-		background-color:#808080;
+	background-color:#808080;
 }
 
 .itemPicture{
