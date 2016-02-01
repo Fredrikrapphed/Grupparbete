@@ -53,7 +53,7 @@
 
 	<body onLoad="slideA()"> 
 		<header>
-			<a href="frontpage.html" onmousedown="showSlide()">
+			<a href="frontpage.html">
 				<img id="logo" src="images/Sream_logo.png" alt="Sream logo" />
 			</a>
 				<h1>SREAM</h1>
@@ -91,13 +91,37 @@
 			<input type="text" class="search" placeholder="Sök...">
 			<input type="button" class="button" value="Sök">
 		</form>
-		
-		<!-- bildspelet -->
-		<div id="container">
-			<img src="images/img1.png" id="slideshowimg" alt="Gamelogo">
-			<div id ="leftButton"><img onClick="slide(-1)" class="left" src="images/leftarrow.png" alt="leftarrow"></div>
-			<div id ="rightButton"><img onClick="slide(1)" class="right" src="images/rightarrow.png" alt="rightarrow"></div>
-		</div>
-		
+		<section id="frontpage">
+			<!-- bildspelet -->
+			<div id="container">
+				<img src="images/img1.png" id="slideshowimg" alt="Gamelogo">
+				<div id ="leftButton"><img onClick="slide(-1)" class="left" src="images/leftarrow.png" alt="leftarrow"></div>
+				<div id ="rightButton"><img onClick="slide(1)" class="right" src="images/rightarrow.png" alt="rightarrow"></div>
+			</div>
+			
+			<a id="categoryLink" href="categories.html#action">
+				<div class="frontpageItem">
+					<div class="itemPicture"><img src="images/action.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Actionspel </p>
+					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+					</div>
+					<div class="itemButtonContainer">
+						<div class="itemPrice"><p> 500 kr </p></div>
+					</div>
+				</div>
+			</a>
+			
+			<a id="categoryLink" href="categories.html#adventure">
+				<div class="frontpageItem">
+					<div class="itemPicture"><img src="images/adventure.png" alt="Produkt"/></div>
+					<div class="itemName"><p> Äventyrsspel </p>
+					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+					</div>
+					<div class="itemButtonContainer">
+						<div class="itemPrice"><p> 250 kr </p></div>
+					</div>
+				</div>
+			</a>
+		</section>
 	</body>
 </html>

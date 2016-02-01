@@ -28,6 +28,12 @@ nav{
 	height: 67px;
 }
 
+section#frontpage{
+	width: 1000px;
+	margin: auto;
+	height: 700px; 
+}
+
 .shopCart{
 	position:absolute;
 	height:50px;

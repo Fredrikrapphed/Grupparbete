@@ -1,8 +1,9 @@
 #container {
-	position:relative;
-	height:413px;
-	width:550px;
-	margin:20px auto;
+	display: inline-block;
+	position: relative;
+	height: 413px;
+	width: 550px;
+	margin: 20px auto;
 }
 
 #slideshowimg{

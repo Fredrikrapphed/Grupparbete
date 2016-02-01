@@ -18,6 +18,28 @@
 	background-color:#808080;
 }
 
+.frontpageItem{
+	display: block;
+	background-color:#6E6E6E;
+	height:200px;
+	width:350px;
+	white-space: nowrap;
+}
+
+#categoryLink{
+	display:block;
+	height:200px;
+	width:350px;
+	position: relative;
+	bottom: 433px;
+	margin-bottom: 13px;
+	left: 564px;
+}
+
+.frontpageItem:hover{
+	background-color:#808080;
+}
+
 .itemPicture{
 	display: inline-block;
 	height:150px;
@@ -41,6 +63,7 @@
 	font-weight: bold;
 	font-size: 25px;
 	font-family: 'PT sans', Arial,sans-serif;
+	color: black;
 }
 
 .itemInfoBox{
