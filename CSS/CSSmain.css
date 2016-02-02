@@ -76,31 +76,3 @@ div#shopItems{
 	text-align: center;
 	margin: 15px;
 }
-
-#searchBar {
-	position: relative;
-	float: right; 
-	bottom: 60px;
-}
-
-.search {
-	padding:8px 15px;
-	background:rgba(100, 2, 50);
-	border: none;
-}
-
-.button {
-	padding:8px 15px;
-	left:-8px;
-	border: none;
-	background-color:#492BAE;
-	color:white; /* text-färg*/
-}
-
-.button:hover  {
-	background-color:#644CB8;
-}
-
-.button:active {
-	background-color:#301298;
-}

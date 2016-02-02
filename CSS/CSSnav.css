@@ -28,7 +28,11 @@ nav ul li a {
 }
 
 nav ul li a:hover { /* lägger en annan bakgrund när man har musen över länkarna ovanför dropdown-menyn. */
+<<<<<<< HEAD
 	background:#808080;
+=======
+	background: #808080;
+>>>>>>> Erik
 }
   
 nav li:hover ul { /* gör så att dropdown-menyn syns när man har musen över länken ovanför. */
@@ -40,12 +44,13 @@ nav li:hover li {
 float: none;
 }
 
-nav li:hover a { /* sätter bakgrunden för dropdown-menyn. */
-	background:#6E6E6E;
+
+nav li:hover a { /* ändrar bakgrunden på dropdown-menyn. */
+	background: #6E6E6E;
 }
 
 nav li:hover li a:hover { /* ändrar bakgrunden på den länken man har muspekaren över i dropdown-menyn. */
-	background:#808080;
+	background: #808080;
 }
 
 #drop-nav{
