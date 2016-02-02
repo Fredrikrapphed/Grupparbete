@@ -1,4 +1,4 @@
-<!DOCTYPE HTML
+<!DOCTYPE html>
 
 <head>
 		<meta charset="UTF-8">
@@ -92,36 +92,41 @@
 			<input type="button" class="button" value="Sök">
 		</form>
 		<section id="frontpage">
+			<h1>Nya Spel</h1> 
+		
 			<!-- bildspelet -->
 			<div id="container">
 				<img src="images/img1.png" id="slideshowimg" alt="Gamelogo">
 				<div id ="leftButton"><img onClick="slide(-1)" class="left" src="images/leftarrow.png" alt="leftarrow"></div>
 				<div id ="rightButton"><img onClick="slide(1)" class="right" src="images/rightarrow.png" alt="rightarrow"></div>
 			</div>
+			<!--slut bildspel-->
 			
-			<a id="categoryLink" href="categories.html#action">
-				<div class="frontpageItem">
-					<div class="itemPicture"><img src="images/action.png" alt="Produkt"/></div>
-					<div class="itemName"><p> Actionspel </p>
-					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+			<div id="shopItems">
+				<a id="categoryLink" href="categories.html#action">
+					<div class="frontpageItem">
+						<div class="itemPicture"><img src="images/action.png" alt="Produkt"/></div>
+						<div class="itemName"><p> Actionspel </p>
+						<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+						</div>
+						<div class="itemButtonContainer">
+							<div class="itemPrice"><p> 500 kr </p></div>
+						</div>
 					</div>
-					<div class="itemButtonContainer">
-						<div class="itemPrice"><p> 500 kr </p></div>
+				</a>
+				
+				<a id="categoryLink" href="categories.html#adventure">
+					<div class="frontpageItem">
+						<div class="itemPicture"><img src="images/adventure.png" alt="Produkt"/></div>
+						<div class="itemName"><p> Äventyrsspel </p>
+						<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
+						</div>
+						<div class="itemButtonContainer">
+							<div class="itemPrice"><p> 250 kr </p></div>
+						</div>
 					</div>
-				</div>
-			</a>
-			
-			<a id="categoryLink" href="categories.html#adventure">
-				<div class="frontpageItem">
-					<div class="itemPicture"><img src="images/adventure.png" alt="Produkt"/></div>
-					<div class="itemName"><p> Äventyrsspel </p>
-					<div class="itemInfoBox"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p></div>
-					</div>
-					<div class="itemButtonContainer">
-						<div class="itemPrice"><p> 250 kr </p></div>
-					</div>
-				</div>
-			</a>
+				</a>
+			</div>
 		</section>
 	</body>
 </html>

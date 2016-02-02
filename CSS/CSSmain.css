@@ -24,6 +24,7 @@ p {
 	height: 60px;
 }
 
+
 nav{
 	height: 67px;
 }
@@ -31,7 +32,21 @@ nav{
 section#frontpage{
 	width: 1000px;
 	margin: auto;
-	height: 450px;	
+	height: 450px;
+}
+
+#frontpage h1{
+	margin: 0px;
+	font-family: 'PT sans', Arial,sans-serif;
+}
+
+div#shopItems{
+	display: inline-block;
+	height: 450px;
+	width: 350px;
+	position: relative;
+	bottom: 50px;
+	left: 8px;
 }
 
 #frontpageHeader{

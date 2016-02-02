@@ -27,13 +27,11 @@
 }
 
 #categoryLink{
-	display:block;
+	display: block;
 	height:200px;
 	width:350px;
 	position: relative;
-	bottom: 433px;
 	margin-bottom: 13px;
-	left: 564px;
 }
 
 .frontpageItem:hover{
