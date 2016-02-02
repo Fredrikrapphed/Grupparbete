@@ -1,9 +1,11 @@
 #container {
-	display: inline-block;
-	position: relative;
+	display:inline-block;
+	position:relative;
 	height: 413px;
 	width: 550px;
 	margin: 20px auto;
+	top: 0px;
+	left: 0px;
 }
 
 #slideshowimg{

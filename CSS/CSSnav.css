@@ -4,6 +4,7 @@ nav ul { /*listan som de olika länkarna i navigationen ligger i */
 	margin: 0px;
 	font-family: 'PT sans', Arial,sans-serif;
 	font-size: 91%;
+	z-index: 10;
 }
 
 nav ul li { 
