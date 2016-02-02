@@ -1,78 +1,106 @@
 body{
-	background-color: #9B9B9B;
+ background-color: #9B9B9B;
 }
 
 header{
-	float: left;
-	width: 250px;
-	height: 60px;
-	line-height: 30px;
-	background: #6E6E6E;
+ float: left;
+ width: 250px;
+ height: 60px;
+ line-height: 30px;
+ background: #6E6E6E;
 }
 
 header h1 {
-	color: black;
-	font-family: "levenim mt", sans-serif;
+ color: black;
+ font-family: "levenim mt", sans-serif;
 }
 
 p {
-	font-family: 'PT sans', Arial,sans-serif;
+ font-family: 'PT sans', Arial,sans-serif;
 }
 
 #logo{
-	float: left;
-	height: 60px;
+ float: left;
+ height: 60px;
 }
 
 
 nav{
-	height: 67px;
+ height: 67px;
 }
 
 section#frontpage{
-	width: 1000px;
-	margin: auto;
-	height: 450px;
+ width: 1000px;
+ margin: auto;
+ height: 450px;
 }
 
 #frontpage h1{
-	margin: 0px;
-	font-family: 'PT sans', Arial,sans-serif;
+ margin: 0px;
+ font-family: 'PT sans', Arial,sans-serif;
 }
 
 div#shopItems{
-	display: inline-block;
-	height: 450px;
-	width: 350px;
-	position: relative;
-	bottom: 50px;
-	left: 8px;
+ display: inline-block;
+ height: 450px;
+ width: 350px;
+ position: relative;
+ bottom: 50px;
+ left: 8px;
 }
 
 #frontpageHeader{
-	width: auto;
-	margin: 20px 0px 0px 0px;
-	font-family: 'PT sans', Arial,sans-serif;	
+ width: auto;
+ margin: 20px 0px 0px 0px;
+ font-family: 'PT sans', Arial,sans-serif; 
 }
 
 .shopCart{
-	position:absolute;
-	height:50px;
-	width:90px;
-	background:#6E6E6E;
-	right: 8px;
+ position:absolute;
+ height:50px;
+ width:90px;
+ background:#6E6E6E;
+ right: 8px;
 }
 
 #shoppingcart{
-	position: absolute;
-	height:44px;
-	width:44px;
-	margin: 3px; 
-	
+ position: absolute;
+ height:44px;
+ width:44px;
+ margin: 3px; 
+ 
 }
 .shopCart p{
-	float: right;
-	width: 18px;
-	text-align: center;
-	margin: 15px;
+ float: right;
+ width: 18px;
+ text-align: center;
+ margin: 15px;
+}
+
+#searchBar {
+ position: relative;
+ float: right; 
+ bottom: 60px;
+}
+
+.search {
+ padding:8px 15px;
+ background:rgba(100, 2, 50);
+ border: none;
+}
+
+.button {
+ padding:8px 15px;
+ left:-8px;
+ border: none;
+ background-color:#492BAE;
+ color:white; /* text-färg*/
+}
+
+.button:hover  {
+ background-color:#644CB8;
+}
+
+.button:active {
+ background-color:#301298;
 }
