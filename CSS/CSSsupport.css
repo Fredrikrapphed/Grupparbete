@@ -15,11 +15,11 @@
 	text-align: center;
 }
 
-#Sup{
+.Sup{
 	font-family: Georgia;
 	color: #0055DE;
 }
 
-#Sup:active{
+.Sup:active{
 	color: red;
 }
