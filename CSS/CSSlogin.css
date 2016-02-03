@@ -1,16 +1,9 @@
-h2,h3,h4,h5,h6{
-	font-family: Georgia;
-	font-style: none; /* Cursive */
-	text-shadow: 5px 5px 6px rgba(0,0,0,10); /* horizontal-shadow vertical-shadow blur color(red, green, blue, opacity) */
-	text-align: left;
-}
-
+/* CSS för inloggingssidan */
 
 label {
 	display: block;
 	font-family: 'PT sans', Arial,sans-serif;
 }
-
 	
 .cf:after {
     content: ""; 
@@ -33,13 +26,13 @@ label {
 	padding: 10px;
 	background-color: #6E6E6E;
     z-index: -1;
-
-
 }
+
 .loginform ul {
 	padding: 0;
 	margin: 0;
 }
+
 .loginform li {
 	display: inline;
 	float: left;
@@ -58,7 +51,7 @@ label {
 	background: #492BAE;
 	color: #fff;
 	padding: 5px 15px;
-	margin-right: 1000px;
+	margin-right: 900px; /* lägger knappen längre ner */
 	margin-top: 30px;
 	text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.3);
 }
