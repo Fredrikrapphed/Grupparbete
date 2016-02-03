@@ -1,5 +1,4 @@
-
-h2,h3,h4,h5,h6,{
+h2,h3,h4,h5,h6{
 	font-family: serif;
 	font-style: none; /* Cursive */
 	text-shadow: 0px 0px 0px rgba(0,0,0,10); /* horizontal-shadow vertical-shadow blur color(red, green, blue, opacity) */
@@ -11,11 +10,19 @@ h2,h3,h4,h5,h6,{
 	font-style: none; /* Cursive */
 	text-shadow: 2px 2px 3px rgba(0,0,0,1); /* horizontal-shadow vertical-shadow blur color(red, green, blue, opacity) */
 	text-align: center;
-
 }
 
 p{
 	color: white;
+}
+
+#Sup{
+	color: #0055DE;
+	text-align: center;
+}
+
+#Sup:active{
+	color: red;
 }
 
 .container{

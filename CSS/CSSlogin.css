@@ -10,10 +10,10 @@ h2,h3,h4,h5,h6{
 	text-align: left;
 }
 
-}
+
 label {
 	display: block;
-	color: red;
+	font-family: 'PT sans', Arial,sans-serif;
 }
 
 	
@@ -60,14 +60,7 @@ label {
 }
 .loginform input[type=submit] {
 	border: none;
-	background: #64c8ef; /* Äldre browsers */
-	background: -moz-linear-gradient(top,  gray 0%, gray 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,gray), color-stop(100%,gray)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  gray 0%,gray 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  gray 0%,gray 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  gray 0%,gray 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  gray 0%,gray 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='gray', endColorstr='gray',GradientType=0 ); /* IE6-9 */
+	background: #492BAE;
 	color: #fff;
 	padding: 5px 15px;
 	margin-right: 1000px;
