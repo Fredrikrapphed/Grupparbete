@@ -9,7 +9,7 @@
 	top: 0px;
 }
 
-#slideshowimg{
+#slideshowimg{ /*Bilderna i bildspelet*/
 	position:absolute;
 	height:413px;
 	width:550px;
@@ -50,6 +50,7 @@
 	right:0px;
 }
 
+/* lägger en fade-effekt på pilarna. */
 #container:hover .left{
 	opacity: 1;
 	transition: opacity .25s ease-in-out;
